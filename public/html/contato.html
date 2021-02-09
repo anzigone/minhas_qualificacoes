@@ -1,0 +1,94 @@
+<!--Abrir a pagigna, deve digitar html:5-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <table border="0" width="100%" class="menu">
+        <tr>
+            <td align="center"><a href="../html/index.html"><img src="../imagens/LOGO.png" width="200" height="40"></a>
+            </td>
+            <td>QUEM SOMOS</td>
+            <td>CURSOS ONLINE</td>
+            <td>PARA EMPRESAS</td>
+            <td>CONTATO</td>
+            <td>CONTEÚDOS</td>
+        </tr>
+
+    </table>
+
+    <!-- Criando campos do nosso formulario-->
+    <br>
+    <br>
+    <form id="formulario_contato" method="POST">
+        <!--Permite criar uma caixa para inserir a estrutura do formulário-->
+        <!--Inserir uma legenda no formulario-->
+
+        <fieldset>
+            <legend><b>Preencha o nosso formulário</b></legend>
+            <br>
+            <label>Nome Aluno(a):</label><input type="text" name="nome" class="campo_nome" required>
+            <br>
+            <br>
+            <label>Email aluno(a):</label><input type="email" name="email" class="campo_nome" required>
+            <br>
+            <br>
+            <label>Senha:</label><input type="password" nome="password" class="campo_nome">
+            <br>
+            <br>
+            <label>Genero:</label>
+            <!--
+        <input type="radio" name="opcao_radio" value="Feminino" /> Feminino
+        <input type="radio" name="opcao_radio" value="Masculino" /> Masculino
+        <input type="radio" name="opcao_radio" value="Outros" /> Outros
+        <input type="radio" name="opcao_radio" value="Nao_Informado" /> Não informado <br><br>
+        -->
+
+            <input type="radio" name="opcao_radio" value="Feminino" /> Feminino
+            <input type="radio" name="opcao_radio" value="Masculino" /> Masculino
+            <input type="radio" name="opcao_radio" value="Outros" /> Outros
+            <input type="radio" name="opcao_radio" value="nao_informado" /> Não Informado
+            <br>
+            <br>
+            <label>Escolha o curso desejado:</label>
+            <select required>
+                <option value=""></option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">Jsva Script</option>
+                <option value="xml">XML</option>
+            </select>
+            <br>
+            <br>
+            <label>Escolha o período</label>
+            <input type="checkbox" name="OPCAO" value="manha"> Manhã
+            <input type="checkbox" name="OPCAO" value="tarde"> Tarde
+            <input type="checkbox" name="OPCAO" value="noite"> Noite
+            <br>
+            <br>
+            <label>Qual a da desejada?</label> <input type="date" value="data">
+            <br>
+            <br>
+            <label>Mensagem</label><br><textarea name="mensagem" cols="40" rows="3"></textarea>
+            <br>
+            <br>
+            <label>Para realizar o nosso curso envie um comprovante de residência</label><br>
+            <input type="file" value="caminho_arquivo">
+
+            <br>
+            <br>
+
+            <input type="submit" value="Enviar">
+
+        </fieldset>
+    </form>
+</body>
+</html>
